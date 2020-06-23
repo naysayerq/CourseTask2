@@ -1,6 +1,20 @@
-package com.company;
+/**
+ *
+ * @classname : BackEnd
+ *
+ * @version 1.0
+ *
+ * @author Andriy Skryp
+ *
+ * */
 
-public class BackEnd extends Developer{
+
+package entity;
+
+import entity.Company;
+import entity.Developer;
+
+public class BackEnd extends Developer {
 
     public BackEnd() {
     }

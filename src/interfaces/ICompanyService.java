@@ -1,23 +1,38 @@
-package com.company;
+/**
+ *
+ * @classname : ICompanyService
+ *
+ * @version 1.0
+ *
+ * @author Andriy Skryp
+ *
+ * */
+
+
+package interfaces;
+
+import entity.Company;
 
 import java.util.List;
 
 public interface ICompanyService {
 
-       /*
+       /**
         *  @param child - company for which we are searching the top level parent
         *  (parent of parent of ...)
-        *  @return top level paren
+        *
+        *  @return top level parent
         *
         */
 
         Company getTopLevelParent(Company child) throws CloneNotSupportedException;
 
-        /*
+        /**
          *
          *  @param company  - company for which we are searching the count of employees
          *  (count of this company employees +
          *  count employees of all children and their children employees )
+         *
          *  @param companies  - list of all available companies
          *
          *  @return count of employees

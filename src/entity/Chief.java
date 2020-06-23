@@ -1,6 +1,19 @@
-package com.company;
+/**
+ *
+ * @classname : Chief
+ *
+ * @version 1.0
+ *
+ * @author Andriy Skryp
+ *
+ * */
 
-public class Chief extends Company{
+
+package entity;
+
+import entity.Company;
+
+public class Chief extends Company {
 
     public Chief() {
     }

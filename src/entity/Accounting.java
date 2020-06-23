@@ -1,13 +1,34 @@
-package com.company;
+/**
+ *
+ * @classname : Accounting
+ *
+ * @version 1.0
+ *
+ * @author Andriy Skryp
+ *
+ * */
 
-public class Accounting extends Company{
+package entity;
+
+import entity.Company;
+
+public class Accounting extends Company {
+
+
+    // empty constructor
 
     public Accounting() {
     }
 
+
+    // full constructor
+
     public Accounting(Company parent, long employeesCount) {
         super(parent, employeesCount);
     }
+
+
+    // toString
 
     @Override
     public String toString() {

@@ -1,9 +1,32 @@
-package com.company;
+/**
+ *
+ * @classname : CompanyServiceImpl
+ *
+ * @version 1.0
+ *
+ * @author Andriy Skryp
+ *
+ * */
 
-import java.nio.file.Paths;
+
+    // 5. Implement the interface in a class CompanyService.
+
+package entity;
+
+import interfaces.ICompanyService;
+
 import java.util.List;
 
 public class CompanyServiceImpl implements ICompanyService {
+
+
+    /**
+     *  @param child - company for which we are searching the top level parent
+     *  (parent of parent of ...)
+     *
+     *  @return top level parent
+     *
+     */
 
     @Override
     public Company getTopLevelParent(Company child) throws CloneNotSupportedException {
@@ -16,6 +39,19 @@ public class CompanyServiceImpl implements ICompanyService {
         }
         return a;
     }
+
+
+    /**
+     *
+     *  @param company  - company for which we are searching the count of employees
+     *  (count of this company employees +
+     *  count employees of all children and their children employees )
+     *
+     *  @param companies  - list of all available companies
+     *
+     *  @return count of employees
+     *
+     */
 
     @Override
     public long getEmployeeCountForCompanyAndChildren(Company company, List<Company> companies) {
